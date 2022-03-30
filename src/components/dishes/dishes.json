@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_dishes_dishes",
+  "info": {
+    "displayName": "dishes",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.items"
+    }
+  }
+}

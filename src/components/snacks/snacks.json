@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_snacks_snacks",
+  "info": {
+    "displayName": "snacks",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.items"
+    }
+  }
+}

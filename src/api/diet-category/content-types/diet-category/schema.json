@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diet_categories",
+  "info": {
+    "singularName": "diet-category",
+    "pluralName": "diet-categories",
+    "displayName": "dietcategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "daysplan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sevendaysplan.sevendaysplan",
+      "inversedBy": "dietcategory"
+    }
+  }
+}

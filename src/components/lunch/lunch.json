@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_lunch_lunches",
+  "info": {
+    "displayName": "lunch",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.items"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dinner_dinners",
+  "info": {
+    "displayName": "dinner",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "items.items"
+    }
+  }
+}
