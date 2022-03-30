@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lunches",
+  "info": {
+    "singularName": "lunch",
+    "pluralName": "lunches",
+    "displayName": "lunch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "itemname": {
+      "type": "text"
+    },
+    "day_plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::day-plan.day-plan",
+      "inversedBy": "lunches"
+    }
+  }
+}

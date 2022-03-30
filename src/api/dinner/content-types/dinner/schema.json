@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dinners",
+  "info": {
+    "singularName": "dinner",
+    "pluralName": "dinners",
+    "displayName": "dinner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "itemname": {
+      "type": "text"
+    },
+    "day_plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::day-plan.day-plan",
+      "inversedBy": "dinners"
+    }
+  }
+}

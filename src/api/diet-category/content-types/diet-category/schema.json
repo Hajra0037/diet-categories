@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
       "type": "media",
@@ -29,12 +29,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "daysplan": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sevendaysplan.sevendaysplan",
-      "inversedBy": "dietcategory"
     }
   }
 }

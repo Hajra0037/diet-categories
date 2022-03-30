@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "day_plans",
+  "info": {
+    "singularName": "day-plan",
+    "pluralName": "day-plans",
+    "displayName": "dayPlan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "breakfasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::breakfast.breakfast",
+      "mappedBy": "day_plan"
+    },
+    "lunches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lunch.lunch",
+      "mappedBy": "day_plan"
+    },
+    "dinners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dinner.dinner",
+      "mappedBy": "day_plan"
+    },
+    "carbs": {
+      "type": "string"
+    },
+    "protien": {
+      "type": "string"
+    },
+    "fats": {
+      "type": "string"
+    },
+    "dietcategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::diet-category.diet-category"
+    }
+  }
+}

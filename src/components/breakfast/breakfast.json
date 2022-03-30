@@ -6,26 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "item": {
-      "type": "component",
-      "repeatable": true,
-      "component": "items.items"
-    },
-    "carbs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "items.items"
-    },
-    "protines": {
-      "type": "component",
-      "repeatable": true,
-      "component": "items.items"
-    },
-    "fats": {
-      "type": "component",
-      "repeatable": true,
-      "component": "items.items"
-    }
-  }
+  "attributes": {}
 }
